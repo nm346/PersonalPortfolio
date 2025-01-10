@@ -243,7 +243,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(181, 176, 179, 0.5) -5.91%, rgba(16, 19, 21, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -258,12 +258,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #d0cfcf;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+  font-weight: bold; /* Makes the text bold */
+  background-color: rgba(0, 0, 0, 0.485); /* Adds a transparent black background */
+  padding: 10px; /* Adds space inside the box */
+  display: inline-block; /* Ensures the background only wraps around the text */
+  border-radius: 5px; /* Optional: adds rounded corners */
 }
+
 .banner button {
   color: #fff;
   font-weight: 700;
