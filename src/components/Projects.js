@@ -42,7 +42,7 @@ export const Projects = () => {
                     <h2>Projects</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <Tab.Container id="project-tabs" defaultActiveKey="first">
-                        <Nav variant="pills" defaultActiveKey="/home">
+                        <Nav variant="pills" className="nav-pills mb-5 justify-content align-items-center" id="pills-tab">
                         <Nav.Item>
                             <Nav.Link eventKey="first">Tab One</Nav.Link>
                         </Nav.Item>
