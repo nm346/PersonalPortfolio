@@ -35,23 +35,28 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>Throughout my career, I have honed a wide range of skills through hands-on experience in projects and collaborative work with diverse teams. My expertise includes software development and testing using C#, Java, SQL, JavaScript, and TypeScript, as well as proficiency with tools such as Microsoft Azure, Octopus Deploy, and Datadog. I have gained deep familiarity with .NET, Unity game engine and the React library (which I used to create this website).
+                          <br></br>I have developed strong capabilities in UI and API testing with Playwright, Cypress, and Selenium (Specflow and Cucumber BDD). These technical skills were acquired through continuous learning, practical application, and collaboration in professional environments.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>Automation API/UI Testing</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <h5>backend Development</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <h5>Frontend Development</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Image" />
+                                <h5>Critical Thinking</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>Problem Solving</h5>
                             </div>
                         </Carousel>
                     </div>

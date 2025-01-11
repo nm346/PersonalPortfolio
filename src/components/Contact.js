@@ -28,7 +28,7 @@ export const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText("Sending...");
-        let response = await fetch("http://localhost:5000/contact", {
+        let response = await fetch("http://localhost:5001/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json;charset=utf-8",
@@ -41,7 +41,7 @@ export const Contact = () => {
         if (result.code == 200) {
             setStatus({ success: true, message: 'Message sent successfully' });
         } else {
-            setStatus({ success: false, message: 'Something went wrong, please try again later.' });
+            setStatus({ success: false, message: 'Something went wrong, please try again later or download my cv below which has my contact details.' });
         }
     };
 

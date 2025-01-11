@@ -58,7 +58,7 @@ export const Banner = () => {
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Nathan`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Developer", "Software Engineer In Test" ]'><span className="wrap">{text}</span></span></h1>
                   <p>London-based Software Development Engineer with close to 7 years of experience specialising in C# .NET development and test automation. Skilled in backend development, developing, implementing and maintaining micro-services, API integration, and creating scalable testing frameworks.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  
               </div>}
             </TrackVisibility>
           </Col>
