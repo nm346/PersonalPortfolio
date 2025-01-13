@@ -11,8 +11,8 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
-  const period = 2000;
+  const toRotate = [  "Software Developer", "Software Engineer In Test" ];
+  const period = 1600;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -41,7 +41,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(400);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
@@ -56,9 +56,9 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Nathan`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <h1>{`Hi! I'm Nathan`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Developer", "Software Engineer In Test" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>London-based Software Development Engineer with close to 7 years of experience specialising in C# .NET development and test automation. Skilled in backend development, developing, implementing and maintaining micro-services, API integration, and creating scalable testing frameworks.</p>
+                  
               </div>}
             </TrackVisibility>
           </Col>

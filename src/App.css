@@ -32,7 +32,7 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #121212 !important;
-  color: #fff !important;
+  color:  rgb(133, 242, 250) !important;
   font-family: 'Centra', sans-serif !important;
 }
 
@@ -99,7 +99,7 @@ nav.navbar a.navbar-brand {
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color:  rgb(133, 242, 250) !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -127,14 +127,14 @@ span.navbar-text {
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid  rgb(133, 242, 250);
 }
 .social-icon a::before {
     content: "";
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: rgb(133, 242, 250);
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -152,8 +152,8 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
+  color:  rgb(133, 242, 250);
+  border: 1px solid  rgb(133, 242, 250);
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -169,7 +169,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: rgb(133, 242, 250);
   left: 0;
   top: 0;
   z-index: -1;
@@ -194,19 +194,19 @@ nav.navbar .navbar-toggler-icon {
   height: 17px;
   background-image: none;
   position: relative;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid  rgb(133, 242, 250);
   transition: all 300ms linear;
   top: -2px;
 }
 nav.navbar .navbar-toggler-icon:focus {
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid  rgb(133, 242, 250);
 }
 nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
 	width: 24px;
 	position: absolute;
 	height: 2px;
-	background-color: #fff;
+	background-color:  rgb(133, 242, 250);
 	top: 0;
 	left: 0;
 	content: '';
@@ -218,12 +218,12 @@ nav.navbar .navbar-toggler-icon:after {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 	transform: rotate(45deg);
-	background-color: #fff;
+	background-color:  rgb(133, 242, 250);
 	height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 	transform: translateY(8px) rotate(-45deg);
-	background-color: #fff;
+	background-color:  rgb(133, 242, 250);
 	height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
@@ -243,7 +243,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(181, 176, 179, 0.5) -5.91%, rgba(16, 19, 21, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -258,14 +258,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color:  rgb(199, 248, 251);
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+  font-weight: bold; 
+  background-color: rgba(0, 0, 0, 0.485);
+  padding: 10px;
+  display: inline-block; 
+  border-radius: 5px; 
 }
+
 .banner button {
-  color: #fff;
+  color:  rgb(133, 242, 250);
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -317,7 +323,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
+    color: rgb(199, 248, 251);
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -340,6 +346,81 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+/* App.css */
+
+/* Experience Section Styles */
+.experience-section {
+  padding: 60px 0;
+  background-image: url('./assets/img/banner-bg.png'); 
+  background-size: cover;
+  background-position: center;
+  color:#6cdfff;
+  text-align: center;
+  position: relative;
+}
+
+.experience-section h2 {
+  font-size: 3rem; 
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.experience-item {
+  background: rgba(0, 0, 0, 0.672);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 234, 255, 0.3);
+  width: 80%;
+  max-width: 800px;
+  min-width: 350px;
+  transition: all 0.3s ease;
+}
+
+.experience-item h3 {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.experience-item p {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.experience-item:hover {
+  background: #6cdfffc4;
+}
+
+.experience-item:hover h3,
+.experience-item:hover p {
+  color: #000000;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
@@ -352,7 +433,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 .project p {
-  color: #B8B8B8;
+  color: rgb(199, 248, 251);
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -468,7 +549,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: #000;
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -481,10 +562,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form input, .contact form textarea {
   width: 100%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(26, 191, 89, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
-  color: #fff;
+  color: #6cdfff;
   margin: 0 0 8px 0;
   padding: 18px 26px;
   font-weight: 500;
@@ -493,13 +574,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
 }
 .contact form input:focus, .contact form textarea:focus {
-  background: rgba(255, 255, 255, 1);
-  color: #121212;
+  background: #121212;
+  color: #6cdfff;
 }
 .contact form input::placeholder, .contact form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: #6cdfff;
 }
 .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
   color: #121212;
@@ -507,25 +588,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button {
   font-weight: 700;
-  color: #000;
-  background-color: #fff;
+  color: #6cdfff;
+  background-color: #000;
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
-  border-radius: 0;
+  border-radius: 2;
   position: relative;
   transition: 0.3s ease-in-out;
+  border: 1px solid #47ebf9;
+  padding: 10px 20px;
+  border-radius: 4px;
 }
 .contact form button span {
   z-index: 1;
   position: relative;
 }
 .contact form button:hover {
-  color: #fff;
+  color: #000000;
 }
 .contact form button::before {
   content: "";
-  background: #121212;
+  background: #47ebf9;
   width: 0;
   height: 100%;
   position: absolute;
@@ -581,7 +665,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .new-email-bx::after {
   content: "";
-  background: #fff;
+  background: #6cdfff;
   border-radius: 20px;
   position: absolute;
   z-index: -1;
@@ -599,9 +683,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 15px;
 }
 .new-email-bx button {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #000000 -5.91%, #71d3f4 111.58%);
   padding: 20px 65px;
-  color: #fff;
+  color: #7edbff;
   font-weight: 500;
   letter-spacing: 0.5px;
   border-radius: 18px;
