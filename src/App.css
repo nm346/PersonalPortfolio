@@ -423,6 +423,85 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
+  background-image: url('./assets/img/banner-bg.png'); 
+  background-size: cover; /* Ensures the image covers the whole section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 50px 0; /* Adds some padding to the section */
+  color: white; /* Ensures text is visible over the background */
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center; /* Align buttons in the center */
+  margin-bottom: 20px; /* Optional: Space below the button group */
+  padding: 0; /* Remove any padding */
+}
+
+.nav-buttons button {
+  flex-grow: 1; /* Ensure buttons grow equally */
+  background-color: #6f6d6d21; /* Button color */
+  color: white;
+  font-weight: bold;
+  border: 2;
+  border-color: #6cdfff;
+  font-size: 20px;
+  padding: 15px 5ex; /* Adjust the height */
+  cursor: pointer;
+  border-radius: 5; /* No rounded corners */
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin: 0; /* Remove any margin between buttons */
+}
+
+.nav-buttons button:not(:last-child) {
+  border-right: 1px solid white; /* Optional: Add a visible divider between buttons */
+}
+
+.nav-buttons button:hover {
+  background-color: #6cdfff58; /* Darker blue on hover */
+}
+
+.nav-buttons button:focus {
+  outline: none;
+  background-color: #6cdfff;
+  color:#000;
+  font-weight: bold;
+}
+
+/* Navigation Bar */
+.project-nav-btn {
+  background-color: #6cdfff;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 5px;
+  transition: 0.3s ease;
+}
+
+.project-nav-btn:hover {
+  background-color: #ffffff;
+  color: #6cdfff;
+}
+
+.project-nav-btn.active {
+  background-color: #ffffff;
+  color: #6cdfff;
+  border: 2px solid #6cdfff;
+}
+
+/* Project Highlight */
+.project-highlight {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project {
   padding: 80px 0;
   position: relative;
   background-color: black;
@@ -548,6 +627,99 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
+
+/* Projects Section */
+.project {
+  padding: 50px 0;
+  background-color: #000000;
+}
+
+.project h1 {
+  font-size: 2.5rem;
+  color: #6cdfff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.project-btn {
+  background-color: #6cdfff;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #ffffff;
+  color: #6cdfff;
+}
+
+.project-highlight {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-highlight h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.project-highlight p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.learn-more-btn {
+  background-color: #6cdfff;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #ffffff;
+  color: #6cdfff;
+}
+
+.proj-imgbx {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.proj-imgbx img {
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+.proj-imgbx:hover img {
+  transform: scale(1.1);
+}
+
+.proj-txtx {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
 .contact {
   background: #000;
   padding: 60px 0 200px 0;
