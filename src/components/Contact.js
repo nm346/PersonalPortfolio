@@ -47,15 +47,13 @@ export const Contact = () => {
 
     const handleDownload = () => {
         setDownloadButtonText("Downloading CV");
-        // Simulate download delay
         setTimeout(() => {
             setDownloadButtonText("Download My CV");
         }, 2000);
 
-        // Trigger file download
         const link = document.createElement("a");
-        link.href = cv; // Replace with the correct path to your .docx file
-        link.download = "NathanMayifuila_CV.docx"; // Replace with the desired file name
+        link.href = cv; 
+        link.download = "NathanMayifuila_CV.docx"; 
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -101,7 +99,6 @@ export const Contact = () => {
                                                 <button type="submit">
                                                     <span>{buttonText}</span>
                                                 </button>
-                                                {/* Add a new div or margin for spacing */}
                                                 <div style={{ marginTop: "1px" }}></div>
                                                 <button type="button" onClick={handleDownload}>
                                                     <span>{downloadButtonText}</span>
