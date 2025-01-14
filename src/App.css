@@ -423,6 +423,85 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
+  background-image: url('./assets/img/banner-bg.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 50px 0; 
+  color: white; 
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 20px; 
+  padding: 0;
+}
+
+.nav-buttons button {
+  flex-grow: 1;
+  background-color: #6f6d6d21; 
+  color: white;
+  font-weight: bold;
+  border: 2;
+  border-color: #6cdfff;
+  font-size: 20px;
+  padding: 15px 5ex;
+  cursor: pointer;
+  border-radius: 5;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin: 0; 
+}
+
+.nav-buttons button:not(:last-child) {
+  border-right: 1px solid white;
+}
+
+.nav-buttons button:hover {
+  background-color: #6cdfff58; 
+}
+
+.nav-buttons button:focus {
+  outline: none;
+  background-color: #6cdfff;
+  color:#000;
+  font-weight: bold;
+}
+
+/* Navigation Bar */
+.project-nav-btn {
+  background-color: #6cdfff;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 5px;
+  transition: 0.3s ease;
+}
+
+.project-nav-btn:hover {
+  background-color: #ffffff;
+  color: #6cdfff;
+}
+
+.project-nav-btn.active {
+  background-color: #6cdfff  !important;
+  color: #000000 !important;
+  border: 2px solid #6cdfff !important;
+}
+
+/* Project Highlight */
+.project-highlight {
+  background-color: rgba(236, 24, 24, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project {
   padding: 80px 0;
   position: relative;
   background-color: black;
@@ -512,32 +591,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx:hover::before {
   height: 100%;
 }
-.proj-txtx {
-  position: absolute;
-  text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
-  opacity: 0;
-  width: 100%;
-}
-.proj-imgbx:hover .proj-txtx {
-  top: 50%;
-  opacity: 1;
-}
-.proj-txtx h4 {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1.1em;
-}
-.proj-txtx span {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
-}
 .background-image-right {
   top: 20%;
   position: absolute;
@@ -548,6 +601,143 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
+
+/* Projects Section */
+.project {
+  padding: 50px 0;
+  background-color: #000000;
+}
+
+.project h1 {
+  font-size: 4.5rem;
+  color: #6cdfff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project p {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.project-btn {
+  background-color: #6cdfff;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #ffffff;
+  color: #6cdfff;
+}
+
+.project-highlight {
+  background-color: rgba(0, 0, 0, 0.617);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-color: #47ebf9;
+}
+
+.project-highlight h2 {
+  font-size: 1.8rem;
+  color: #6cdfff;
+  margin-bottom: 10px;
+}
+
+.project-highlight p {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.learn-more-btn {
+  background-color: #6cdfff;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #ffffff;
+  color: #6cdfff;
+}
+
+.proj-imgbx {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.proj-imgbx img {
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+.proj-imgbx:hover img {
+  transform: scale(1.1);
+}
+
+.download-docs-btn {
+  background-color: #b81717;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 15px; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project-highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-highlight .learn-more-btn,
+.project-highlight .download-docs-btn {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center; 
+}
+
+.learn-more-btn {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  font-weight: bold!important;
+  border: 1px solid rgba(255, 255, 255, 0.5)!important;
+  border-color: #6cdfff!important;
+}
+.download-docs-btn {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  font-weight: bold!important;
+  border: 1px solid rgba(255, 255, 255, 0.5)!important;
+  border-color: #6cdfff!important;
+}
+
+.download-docs-btn:hover {
+  background-color: #6cdfff!important;
+  color: #000 !important;
+
+}
+
+.learn-more-btn:hover {
+  background-color: #6cdfff!important;
+  color: #000 !important;
+}
+
 .contact {
   background: #000;
   padding: 60px 0 200px 0;
@@ -663,6 +853,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: -1px;
   right: -1px;
 }
+
 .new-email-bx::after {
   content: "";
   background: #6cdfff;
