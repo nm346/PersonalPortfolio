@@ -34,8 +34,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Throughout my career, I have honed a wide range of skills through hands-on experience in projects and collaborative work with diverse teams. My expertise includes software development and testing using C#, Java, SQL, JavaScript, and TypeScript, as well as proficiency with tools such as Microsoft Azure, Octopus Deploy, and Datadog. I have gained deep familiarity with .NET, Unity game engine and the React library (which I used to create this website).
-                          <br></br>I have developed strong capabilities in UI and API testing with Playwright, Cypress, and Selenium (Specflow and Cucumber BDD). These technical skills were acquired through continuous learning, practical application, and collaboration in professional environments.</p>
+                        <p>Throughout my career, I’ve gained expertise in software development and testing with C#, Java, SQL, JavaScript, and TypeScript, along with tools like Microsoft Azure, Octopus Deploy, and Datadog. <br></br>I’m skilled in building C# microservices, .NET frameworks, and UI/API testing with Playwright, Cypress, and Selenium. <br></br>These technical skills reflect years of hands-on experience, learning, and collaboration</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
