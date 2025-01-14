@@ -42,11 +42,12 @@ export const Banner = () => {
     let ticker = setInterval(() => {
       tick();
     }, delta);
-
+  
     return () => { clearInterval(ticker) };
-  }, [delta,text])
-
-
+    
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [delta]); // 'tick' is intentionally excluded
+  
   return (
     <section className="banner" id="home">
       <Container>
