@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -13,14 +12,6 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [  "Software Developer", "Software Engineer In Test" ];
   const period = 1600;
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => { clearInterval(ticker) };
-  }, [text])
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -35,7 +26,7 @@ export const Banner = () => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
+      setIndex(index -1)
       setDelta(period);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
@@ -43,9 +34,18 @@ export const Banner = () => {
       setIndex(1);
       setDelta(400);
     } else {
-      setIndex(prevIndex => prevIndex + 1);
+      setIndex(index +1)
     }
   }
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => { clearInterval(ticker) };
+  }, [delta,text])
+
 
   return (
     <section className="banner" id="home">

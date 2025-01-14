@@ -1,11 +1,8 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-
 import universityLogo from '../assets/img/uollogo.png';
 import freemarketLogo from '../assets/img/freemarketfxlogo.png';
 import forestersLogo from '../assets/img/foresterslogo.png';
 import capgeminiLogo from '../assets/img/CapgeminiLogo.png';
-
 
 export const Experience = () => {
   return (

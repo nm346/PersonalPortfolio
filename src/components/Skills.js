@@ -3,7 +3,6 @@ import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import backgroundImg from "../assets/img/banner-bg.png"
 
 export const Skills = () => {
   const responsive = {
@@ -35,23 +34,23 @@ export const Skills = () => {
                         <p>Throughout my career, I’ve gained expertise in software development and testing with C#, Java, SQL, JavaScript, and TypeScript, along with tools like Microsoft Azure, Octopus Deploy, and Datadog. <br></br>I’m skilled in building C# microservices, .NET frameworks, and UI/API testing with Playwright, Cypress, and Selenium. <br></br>These technical skills reflect years of hands-on experience, learning, and collaboration</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="API/UIImage" />
                                 <h5>Automation API/UI Testing</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>backend Development</h5>
+                                <img src={meter2} alt="BackendImage" />
+                                <h5>Backend Development</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={meter3} alt="FrontendImage" />
                                 <h5>Frontend Development</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={meter2} alt="CriticalImage" />
                                 <h5>Critical Thinking</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="ProblemImage" />
                                 <h5>Problem Solving</h5>
                             </div>
                         </Carousel>
