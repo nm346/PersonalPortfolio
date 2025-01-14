@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import projImg4 from "../assets/img/project-img3.png";
 import kumiteImg1 from "../assets/img/kumiteImg1.png";
 import kumiteImg2 from "../assets/img/kumiteImg2.png";
 import kumiteImg3 from "../assets/img/kumiteImg3.png";
 import kumiteImg4 from "../assets/img/kumiteImg4.png";
+import medicImg1 from "../assets/img/medicImg1.png";
+import medicImg2 from "../assets/img/medicImg2.png";
+import medicImg3 from "../assets/img/medicImg3.png";
+import medicImg4 from "../assets/img/medicImg4.png";
+import coremicroserviceImg1 from "../assets/img/coremicroserviceImg1.png";
+import coremicroserviceImg2 from "../assets/img/coremicroserviceImg2.png";
+import coremicroserviceImg3 from "../assets/img/coremicroserviceImg3.png";
+import coremicroserviceImg4 from "../assets/img/coremicroserviceImg4.png";
 import doc1 from "../assets/documents/KumiteGameDoc.pdf";
 
 
@@ -28,16 +32,20 @@ export const Projects = () => {
       images: [kumiteImg1, kumiteImg2, kumiteImg3, kumiteImg4],
     },
     {
-      title: "Special Project 2",
-      description: "Another unique project with a focus on cutting-edge technologies. Discover the features and innovations behind this work.",
-      buttonText: "Explore More",
-      images: [projImg3, projImg4, projImg1, projImg2],
+      title: "iOS Swift Medicine Reminder and Information Application",
+      description: `Swift Project to help patients manage their medication. 
+It sends reminders for doses, provides details about the medicine, and allows users to track multiple medications.`,
+      buttonText: "View source code on Github",
+      buttonLink: "https://github.com/nm346/iOS_KonzoAPP",
+      images: [medicImg1, medicImg2, medicImg3, medicImg4],
     },
     {
-      title: "Special Project 3",
-      description: "A groundbreaking project that explores new horizons in technology and design. See how it makes a difference.",
-      buttonText: "Check it Out",
-      images: [projImg2, projImg3, projImg4, projImg1],
+      title: ".NET Core Microservices Project",
+      description: `I am developing a project focusing on Microservices architecture with .NET Core MVC(.NET 8),
+Entity Framework Core, SQL and .NET Identity with Azure Service Bus.
+Project is private on GitHub but will be public soon.`,
+buttonText: "Source code on Github [TBD]",      
+images: [coremicroserviceImg1, coremicroserviceImg2, coremicroserviceImg3, coremicroserviceImg4],
     },
   ];
 
@@ -78,7 +86,7 @@ export const Projects = () => {
                 className={`project-nav-btn ${currentPage === 2 ? "active" : ""}`}
                 onClick={() => setCurrentPage(2)}
               >
-                Button 2
+                iOS Swift Application
               </Button>
             </Col>
             <Col md={2} className="text-center">
@@ -86,7 +94,7 @@ export const Projects = () => {
                 className={`project-nav-btn ${currentPage === 3 ? "active" : ""}`}
                 onClick={() => setCurrentPage(3)}
               >
-                Button 3
+               .NET Core Project
               </Button>
             </Col></div>
         </Row>
