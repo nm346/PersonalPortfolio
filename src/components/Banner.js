@@ -13,6 +13,15 @@ export const Banner = () => {
   const toRotate = [  "Software Developer", "Software Engineer In Test" ];
   const period = 1600;
 
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => { clearInterval(ticker) };
+  }, [text])
+
+ 
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
@@ -26,7 +35,7 @@ export const Banner = () => {
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex(index -1)
+      setIndex(prevIndex => prevIndex - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
@@ -34,20 +43,10 @@ export const Banner = () => {
       setIndex(1);
       setDelta(400);
     } else {
-      setIndex(index +1)
+      setIndex(prevIndex => prevIndex + 1);
     }
   }
 
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-  
-    return () => { clearInterval(ticker) };
-    
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [delta]); // 'tick' is intentionally excluded
-  
   return (
     <section className="banner" id="home">
       <Container>
