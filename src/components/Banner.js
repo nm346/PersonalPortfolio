@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import 'animate.css';
@@ -9,8 +9,10 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const toRotate = [ "Software Developer", "Software Engineer In Test" ];
   const period = 1600;
+
+  // Use useMemo to stabilize the array
+  const toRotate = useMemo(() => [ "Software Developer", "Software Engineer In Test" ], []);
 
   const tick = useCallback(() => {
     let i = loopNum % toRotate.length;
@@ -31,7 +33,7 @@ export const Banner = () => {
       setLoopNum(loopNum + 1);
       setDelta(400);
     }
-  }, [isDeleting, loopNum, text, toRotate]);
+  }, [isDeleting, loopNum, text, toRotate, period]);
 
   useEffect(() => {
     let ticker = setInterval(() => {
