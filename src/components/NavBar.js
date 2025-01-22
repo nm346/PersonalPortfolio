@@ -5,12 +5,10 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import cord from '../assets/img/cord.svg';
 import { HashLink } from 'react-router-hash-link';
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {
-  const [activeLink, setActiveLink] = useState('home');
+  const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -29,12 +27,12 @@ export const NavBar = () => {
   }, []);
 
   const toggleMenu = () => {
-    setMenuOpen((prevState) => !prevState);
+    setMenuOpen((prevState) => !prevState); // Toggle state safely
   };
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
-    setMenuOpen(false); // Ensure menu closes when a link is clicked
+    setMenuOpen(false); // Close menu on navigation
   };
 
   return (
@@ -47,53 +45,65 @@ export const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleMenu}>
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
-          <Navbar.Collapse id="basic-navbar-nav" className={menuOpen ? "show" : "collapse"}>
+          <Navbar.Collapse id="basic-navbar-nav" className={menuOpen ? "show" : ""}>
             <Nav className="ms-auto">
               <Nav.Link
                 href="#home"
-                className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
-                onClick={() => onUpdateActiveLink('home')}
+                className={activeLink === "home" ? "active navbar-link" : "navbar-link"}
+                onClick={() => onUpdateActiveLink("home")}
               >
                 Home
               </Nav.Link>
               <Nav.Link
                 href="#skills"
-                className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
-                onClick={() => onUpdateActiveLink('skills')}
+                className={activeLink === "skills" ? "active navbar-link" : "navbar-link"}
+                onClick={() => onUpdateActiveLink("skills")}
               >
                 Skills
               </Nav.Link>
               <Nav.Link
                 href="#education"
-                className={activeLink === 'education' ? 'active navbar-link' : 'navbar-link'}
-                onClick={() => onUpdateActiveLink('education')}
+                className={activeLink === "education" ? "active navbar-link" : "navbar-link"}
+                onClick={() => onUpdateActiveLink("education")}
               >
                 Education
               </Nav.Link>
               <Nav.Link
                 href="#experience"
-                className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'}
-                onClick={() => onUpdateActiveLink('experience')}
+                className={activeLink === "experience" ? "active navbar-link" : "navbar-link"}
+                onClick={() => onUpdateActiveLink("experience")}
               >
                 Experience
               </Nav.Link>
               <Nav.Link
                 href="#projects"
-                className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
-                onClick={() => onUpdateActiveLink('projects')}
+                className={activeLink === "projects" ? "active navbar-link" : "navbar-link"}
+                onClick={() => onUpdateActiveLink("projects")}
               >
                 Projects
               </Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/nathanmay22/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/nathanmay22/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={navIcon1} alt="LinkedIn" />
                 </a>
-                <a href="https://github.com/nm346/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/nm346/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={navIcon2} alt="Github" />
                 </a>
-                <a href="https://cord.co/candidate/account/u/candidate/46772" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://cord.co/candidate/account/u/candidate/46772"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={cord} alt="" />
                 </a>
               </div>
