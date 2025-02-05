@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9ea39ce5.css",
-    "main.js": "/static/js/main.543a2b3c.js",
+    "main.js": "/static/js/main.95308cc9.js",
     "static/js/488.b78609e7.chunk.js": "/static/js/488.b78609e7.chunk.js",
     "static/media/contact-img.svg": "/static/media/contact-img.f7c0b9301d88dc99ea81877ec9b399a4.svg",
     "static/media/header-img.svg": "/static/media/header-img.3d76c95cd89837a34471e7b7dbf4226b.svg",
@@ -29,7 +29,7 @@
     "static/media/CentraNo2-Book.ttf": "/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/CapgeminiLogo.png": "/static/media/CapgeminiLogo.9dbc77f8146dfbeb53f7.png",
     "static/media/kumiteImg2.png": "/static/media/kumiteImg2.dbab7441632adef0e9f8.png",
-    "static/media/Nathan_Mayifuila_CV.docx": "/static/media/Nathan_Mayifuila_CV.5eec6774d841e7501a96.docx",
+    "static/media/Nathan_Mayifuila_CV.docx": "/static/media/Nathan_Mayifuila_CV.83f000c0de82ca1a234f.docx",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
@@ -38,11 +38,11 @@
     "static/media/nav-icon1.svg": "/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "index.html": "/index.html",
     "main.9ea39ce5.css.map": "/static/css/main.9ea39ce5.css.map",
-    "main.543a2b3c.js.map": "/static/js/main.543a2b3c.js.map",
+    "main.95308cc9.js.map": "/static/js/main.95308cc9.js.map",
     "488.b78609e7.chunk.js.map": "/static/js/488.b78609e7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9ea39ce5.css",
-    "static/js/main.543a2b3c.js"
+    "static/js/main.95308cc9.js"
   ]
 }
