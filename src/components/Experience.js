@@ -11,7 +11,7 @@ export const Experience = () => {
       <h2>Work Experience</h2>
       <div className="experience-list">
         <div className="experience-item">
-          <h3><img src={freemarketLogo} alt="freemarket logo" className="logo" />Freemarket - Software Development Engineer in Test (2022 -)</h3>
+          <h3><img src={freemarketLogo} alt="freemarket logo" className="logo" />Freemarket - Software Developer / Dev in Test (2022 -)</h3>
           <p>
             Creating and working on .Net Frameworks<br />
             Collaborating with devs to develop C# Microservices<br />
